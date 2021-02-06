@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Some quick reminders | Book Template</title>
+  <meta name="description" content="This book is a template for starting new Warhorn Classics book projects. It also contains some brief instructions for how to get started." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Some quick reminders | Book Template" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://warhornmedia.github.io/warhorn-classics-book-template" />
+  <meta property="og:image" content="https://warhornmedia.github.io/warhorn-classics-book-templatecover.jpg" />
+  <meta property="og:description" content="This book is a template for starting new Warhorn Classics book projects. It also contains some brief instructions for how to get started." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Some quick reminders | Book Template" />
+  
+  <meta name="twitter:description" content="This book is a template for starting new Warhorn Classics book projects. It also contains some brief instructions for how to get started." />
+  <meta name="twitter:image" content="https://warhornmedia.github.io/warhorn-classics-book-templatecover.jpg" />
+
+<meta name="author" content="Warhorn Classics" />
+
+
+<meta name="date" content="2020-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/header-attrs-2.3.11/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="classics-template-files/css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://www.warhornmedia.com/"><img src="classics-template-files/images/warhornlogo.png" width="260"></a></li>
+<li><a href="./">Book Template — Warhorn Classics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Cover</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i>About this book</a></li>
+<li class="chapter" data-level="1" data-path="01-Some-quick-reminders.html"><a href="01-Some-quick-reminders.html"><i class="fa fa-check"></i><b>1</b> Some quick reminders</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="01-Some-quick-reminders.html"><a href="01-Some-quick-reminders.html#creating-a-new-book"><i class="fa fa-check"></i><b>1.1</b> Creating a new book</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Book Template</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="some-quick-reminders" class="section level1" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Some quick reminders</h1>
+<div id="creating-a-new-book" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Creating a new book</h2>
+<ol style="list-style-type: decimal">
+<li>Go to <a href="https://github.com/warhornmedia/warhorn-classics-book-template">the repo</a> on Github and click “Use this template.”</li>
+</ol>
+<p><img src="images/screenshot1.png" width="65%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Change the owner to warhornmedia. Enter a repository name using the format “authorlastname-short-book-title”. Set the repository to public. And include all branches. Then click “Create repository from template”</li>
+</ol>
+<p><img src="images/screenshot2.png" width="65%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Clone the new repo to your computer and navigate into its folder in Terminal. Then run the following command locally:</li>
+</ol>
+<pre><code>travis encrypt GITHUB_PAT=yourTokenGoesHere --add</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Add the project on travis-ci.com (You may have to log out and back in for the project to show up.)</li>
+</ol>
+<p><em>Congrats!</em> You now have a new book that will rebuild automatically any time you push changes to github.</p>
+<p>For more in-depth instructions on setting up your new book, as well as important information on how to code the book, check out the <a href="https://warhornmedia.github.io/style-guide">style guide</a>.</p>
+
+</div>
+</div>
+<script> 
+ 	 var refTagger = {
+ 	 	 settings: { 
+ 	 	 	 bibleVersion: "ESV"   
+ 	 	 }  
+ 	 }; 
+ 	 (function(d, t) { 
+ 	 	 var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; 
+ 	 	 g.src = '//api.reftagger.com/v2/RefTagger.js'; 
+ 	 	 s.parentNode.insertBefore(g, s); 
+ 	 }(document, 'script')); 
+</script>
+
+<!-- Fix for split_by: rmd putting footnotes in wrong place sometimes -->
+<script>
+   $(document).ready(function () {
+      $(".footnotes").detach().appendTo('#section-');
+   });
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/warhornmedia/warhorn-classics-book-template/edit/master/01-Some-quick-reminders.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Warhorn-Classics_Book_Template.pdf", "Warhorn-Classics_Book_Template.epub", "Warhorn-Classics_Book_Template.mobi"],
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>
