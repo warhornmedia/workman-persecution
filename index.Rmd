@@ -1,0 +1,39 @@
+--- 
+title: "Book Template"
+author: "Warhorn Classics"
+date: "2020"
+description: "This book is a template for starting new Warhorn Classics book projects. It also contains some brief instructions for how to get started."
+params:
+  scans: ""
+  build: "1"
+cover-image: "cover.jpg"
+url: "https://warhornmedia.github.io/warhorn-classics-book-template/"
+output: 
+  bookdown::gitbook:
+    config:
+      toc:
+        scroll_highlight: yes
+        before: |
+          <li><a href="https://www.warhornmedia.com/"><img src="classics-template-files/images/warhornlogo.png" width="260"></a></li>
+          <li><a href="./">Book Template — Warhorn Classics</a></li>
+        after: |
+          <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+      edit: https://github.com/warhornmedia/warhorn-classics-book-template/edit/master/%s
+documentclass: book
+always_allow_html: yes
+site: bookdown::bookdown_site
+---
+
+<!--- Download the classics template files if not already available -->
+```{r, include=FALSE} 
+if (!dir.exists("classics-template-files")) {
+download.file(url="https://github.com/warhornmedia/classics-template-files/archive/master.zip", destfile = "classics-template-files.zip")
+unzip(zipfile = "classics-template-files.zip", overwrite = TRUE)
+file.remove("classics-template-files.zip")
+file.rename("classics-template-files-master", "classics-template-files")
+}
+```
+
+<!--- Include the classics frontmatter in the book -->
+```{r, child='classics-template-files/rmds/classics-frontmatter.Rmd'}
+```
