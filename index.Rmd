@@ -1,13 +1,13 @@
 --- 
-title: "Book Template"
-author: "Warhorn Classics"
-date: "2020"
-description: "This book is a template for starting new Warhorn Classics book projects. It also contains some brief instructions for how to get started."
+title: "Persecution In the Early Church"
+author: "Herbert B. Workman"
+date: "1906?"
+description: "Missing description"
 params:
-  scans: ""
+  scans: "https://archive.org/details/persecutioninear00work/page/n5/mode/2up"
   build: "1"
 cover-image: "cover.jpg"
-url: "https://warhornmedia.github.io/warhorn-classics-book-template/"
+url: "https://warhornmedia.github.io/workman-persecution/"
 output: 
   bookdown::gitbook:
     config:
@@ -15,10 +15,10 @@ output:
         scroll_highlight: yes
         before: |
           <li><a href="https://www.warhornmedia.com/"><img src="classics-template-files/images/warhornlogo.png" width="260"></a></li>
-          <li><a href="./">Book Template — Warhorn Classics</a></li>
+          <li><a href="./">Persecution In the Early Church — Workman</a></li>
         after: |
           <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-      edit: https://github.com/warhornmedia/warhorn-classics-book-template/edit/master/%s
+      edit: https://github.com/warhornmedia/workman-persecution/edit/master/%s
 documentclass: book
 always_allow_html: yes
 site: bookdown::bookdown_site
