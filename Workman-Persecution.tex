@@ -4,10 +4,10 @@
 %
 \documentclass[
 ]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -41,7 +41,8 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -121,7 +122,7 @@
 \makeatother
 
 \frontmatter
-\ifluatex
+\ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 
@@ -145,7 +146,7 @@
 
 Originally published as ``This Is An Empty Book'' in \emph{Warhorn Classics Anthology} (Bayly, McNeilly, Weeks, et al, 2020), 219--283.
 
-Republished by \href{https://classics.warhornmedia.com/}{Warhorn Classics}---making classic Christian content available online for \textsc{free} in high quality, readable formats.
+Republished by \href{https://classics.warhornmedia.com/}{Warhorn Classics}---making high-quality digital editions of classic Christian content available for free.
 
 The latest version of this book can always be found \href{https://warhornmedia.github.io/workman-persecution/}{here} in many electronic formats for your reading convenience on any device.
 
@@ -161,7 +162,7 @@ The latest version of this book can always be found \href{https://warhornmedia.g
 \subsubsection*{Original}\label{original}}
 \addcontentsline{toc}{subsubsection}{Original}
 
-Scanned images of the original printing of this book (our authoritative source) are available \href{https://archive.org/details/persecutioninear00work/page/n5/mode/2up}{here}.
+Scanned images of this book (our authoritative source) are available \href{https://archive.org/details/persecutioninear00work/page/n5/mode/2up}{here}. We generally choose source texts which were published as late as possible during the author's lifetime.
 
 \hypertarget{text-status}{%
 \subsubsection*{Text Status}\label{text-status}}

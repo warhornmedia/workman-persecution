@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	font-family: calluna-sans, sans-serif;
+	font-family: calluna-sans, Verdana, Helvetica, Helvetica Neue, sans-serif;
 	letter-spacing: .0125em;
 }
 
@@ -49,10 +49,38 @@ NIGHT THEME
 ------*/
 
 
+/*--- FRONT MATTER ---*/
+
+
+#text-status ol li > strong {
+    color:#00a9ac;
+    text-transform:uppercase;
+    font-family: calluna-sans;
+    animation: currentStatus 1s infinite;
+}
+
+#text-status ol li strong:after {
+    content: "\2794";
+    font-style: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@keyframes currentStatus {
+    0% {opacity: 1}
+    50% {opacity: .7}
+    100% {opacity:  1}
+}
+
+.color-theme-1 #text-status ol li > strong {
+    color: darkred;
+}
+
+
 /*--- BODY FONTS ---*/
 
 .book.font-family-0 {
-	font-family: calluna, serif;
+	font-family: calluna, Palatino, Times New Roman, serif;
 	font-variant-ligatures: common-ligatures;
   	-moz-font-feature-settings: "liga", "clig";
   	-webkit-font-feature-settings: "liga", "clig";
@@ -60,7 +88,7 @@ NIGHT THEME
 }
 
 .book.font-family-1 {
-	font-family: calluna-sans, sans-serif;
+	font-family: calluna-sans, Verdana, Helvetica, Helvetica Neue, sans-serif;
 	font-variant-ligatures: common-ligatures;
   	-moz-font-feature-settings: "liga", "clig";
   	-webkit-font-feature-settings: "liga", "clig";
@@ -89,10 +117,10 @@ NIGHT THEME
 
 /* opening line style */
 h1 + p::first-line, h2 + p::first-line {
-	/*all small caps workaround*/
+	/*all small caps workaround
 	text-transform: lowercase;
 	font-variant: small-caps;
-	letter-spacing:.05em;
+	letter-spacing:.05em;*/
 	/* actual opentype all small caps code (does not work on ::first-line because of lack of support; overflow problem)
 	font-variant-caps: all-small-caps;
 	-moz-font-feature-settings: "smcp";
@@ -122,11 +150,15 @@ h1 + p::first-line, h2 + p::first-line {
 /* GREEK */
 
 .book.font-family-0 span:lang(el) {
-	font-family: minion-3, serif;
+	font: 100%/1 Times New Roman, serif;
+	font: 95% Georgia;
+    font: 111%/.9 arno-pro;
 }
 
 .book.font-family-1 span:lang(el) {
-	font-family: minion-3, sans-serif;
+	font-family: sans-serif;
+    font: 111%/.9 arno-pro;
+    font: 92% Helvetica Neue, Helvetica;
 }
 
 /* HEADING STYLES */
@@ -177,7 +209,7 @@ section#section-.normal {
 }
 
 #header h1.title, #header p.author, #header p.date, #header h2.subtitle { /* white/generic header text specs */
-    font-family: calluna, serif;
+    font-family: calluna, Palatino, Times New Roman, serif;
     color: #fff;
     margin: auto;
     max-width: 670px;
@@ -268,7 +300,7 @@ section#section-.normal {
 /* link to section link icon */
 a.anchor-section::before {
     content: "\f0c1";
-    font-family: "Font Awesome 5 Free", FontAwesome, sans-serif;
+    font-family: "Font Awesome 5 Free", FontAwesome, Helvetica, Helvetica Neue, sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -289,7 +321,7 @@ a.anchor-section::before {
     position: absolute;
     visibility: hidden;
     width: 110px;
-    font-family: calluna-sans, sans-serif;
+    font-family: calluna-sans, Verdana, Helvetica, Helvetica Neue, sans-serif;
     letter-spacing: .0125em;
     font-size: 14px;
     line-height: 28px;
@@ -336,7 +368,7 @@ h1, h2 {
 }
 
 h1 {
-	font-family: calluna, serif;
+	font-family: calluna, Palatino, Times New Roman, serif;
 	border-bottom: .1em solid #1aa9ab;
 	line-height: 1;
 	padding-bottom: .5em;
@@ -480,7 +512,7 @@ h3 .header-section-number {
 
 /* HEADER & TOC */
 .book .book-header h1 {
-	font-family: calluna, serif;
+	font-family: calluna, Palatino, Times New Roman, serif;
 	font-style: normal;
 	border: none;
 	padding-bottom: 0;
@@ -490,7 +522,7 @@ h3 .header-section-number {
 }
 
 .book .book-header, .book .book-summary {
-	font-family: calluna-sans, sans-serif;
+	font-family: calluna-sans, Verdana, Helvetica, Helvetica Neue, sans-serif;
 }
 
 .book .book-summary {
@@ -531,7 +563,7 @@ li.divider + li.chapter a:before {
 
 /*--- ALTERNATE BODY TEXT OPTIONS ---*/
 
-/*HYPHENS
+/*HYPHENS*/
 .book .book-body .page-wrapper .page-inner section.normal p {
 	orphans: 2;
 	widows: 2;
@@ -557,7 +589,7 @@ li.divider + li.chapter a:before {
     hyphenate-limit-lines: 2;
     hyphenate-limit-last: always;
     hyphenate-limit-zone: 8%;
-}*/
+}
 
 /* SET PARAGRAPHS TO INDENTED AND NO SPACE BETWEEN
 
@@ -578,17 +610,17 @@ p + p, h3 + p {
 /* LOGO IMAGES */
 
 .book .book-summary .summary li a img {
-	background-image: url("../images/whitelogo-blackletter.png");
+	background-image: url("../images/WHC-plain-white.png");
 	background-size: contain;
 }
 
 .book.color-theme-1 .summary li a img {
-	background-image: url("../images/sepialogo-blackletter.png");
+	background-image: url("../images/WHC-plain-sepia.png");
 	background-size: contain;
 }
 
 .book.color-theme-2 .summary li a img {
-	background-image: url("../images/nightlogo-blackletter.png");
+	background-image: url("../images/WHC-plain-night.png");
 	background-size: contain;
 }
 
@@ -767,4 +799,84 @@ pre code {
 
 .nobreak {
     white-space: nowrap;
+}
+
+/* TABLES */
+
+div.scripture-table {
+}
+
+div.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.scripture-table:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table.scripture-table {
+    width:100%;
+}
+
+table.scripture-table, table.scripture-table tr, table.scripture-table td {
+    border-width: 0 !important;
+    border-style: none !important;
+    background-color: transparent !important;
+}
+
+table.scripture-table td {
+    padding:10px;
+}
+
+/* supposed to be responsive for screens, didn't really work on iPhone…
+@media screen and (max-width: 600px) {
+    div.column {
+        width: 100%;
+    }
+}*/
+
+table {
+    border-collapse: collapse;
+    border-style: none;
+    border-width: 0;
+    border-color: none;
+    width: 100%;
+}
+
+tr, td {
+    width: auto;
+    height: auto;
+    border-style: none;
+    border-width: 0;
+    border-color: none;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow:auto;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table td, .book .book-body .page-wrapper .page-inner section.normal table th {
+    padding: 0px .85em;
+    border:0 none none;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table tr {
+    background-color: none;
+    border-top:0 none none;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table tr:nth-child(2n) {
+    background-color:none;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table th {
+    font-weight: 700
 }
