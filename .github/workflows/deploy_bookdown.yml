@@ -9,7 +9,7 @@ jobs:
     runs-on: macos-11
     steps:
       - name: call-Render-Book
-        uses: warhornmedia/custom-actions/render-classics-work@v0.2
+        uses: warhornmedia/custom-actions/render-classics-work@latest
 
       - name: deploy to github pages
         uses: JamesIves/github-pages-deploy-action@4.0.0
